@@ -15,12 +15,12 @@ void bubbleSort(int* arr, int n, unsigned char invert){
         }
         if (swaps == 0){
             endTimer();
-            printf("Count: %d\n", count);
+            printf("Count: %d\n\n", count);
             return;
         }
     }
     endTimer();
-    printf("Count: %d\n", count);
+    printf("Count: %d\n\n", count);
 }
 
 int main(){

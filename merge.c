@@ -52,7 +52,7 @@ int main(){
     startTimer();
     mergeSort(arr, 0, len);
     endTimer();
-    printf("Count: %d\n", count);
+    printf("Count: %d\n\n", count);
 
     return 0;
 }

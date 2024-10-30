@@ -13,7 +13,7 @@ void insertionSort(int* arr, int n){
         }
     }
     endTimer();
-    printf("Count: %d\n", count);
+    printf("Count: %d\n\n", count);
 }
 
 int main(){
