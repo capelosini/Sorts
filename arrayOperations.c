@@ -1,5 +1,4 @@
 #include "arrayOperations.h"
-#include <time.h>
 
 int testArr[] = {21, 19, 20, 12, 15, 13, 2, 5, 10, 1, 3, 50, 53, 24, 0, -10, -1, 10, 4};
 int testArrLen = 19;
@@ -36,4 +35,18 @@ void swap(int* arr, int x, int y){
     int t=arr[x];
     arr[x]=arr[y];
     arr[y]=t;
+}
+
+void shuffle(int* arr, int size){
+    for (int i=0; i<size; i++){
+        int pos1 = rand() % size;
+        int pos2 = rand() % size;
+        swap(arr, pos1, pos2);
+    }
+}
+
+void leftShift(int* arr, int size, int index){
+    for (int i=index; i<size; i++){
+        arr[i]=arr[i+1];
+    }
 }
